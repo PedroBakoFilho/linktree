@@ -117,10 +117,12 @@ export function Home(){
             </div>
           )}
         </main>
-        <footer style={{backgroundColor: "#17806C"}} className="w-full fixed bottom-0 pb-3 pt-3 flex items-center justify-center">
-          <span className="text-white mr-10">Copyright &copy; 2024, Todos os direitos reservados - <button onClick={handleNavigate}>Imex Solutions</button></span>
-          <span className="">-Desenvolvido por Atlas WW-</span>
+        <footer style={{backgroundColor: "#17806C"}} className="w-full fixed bottom-0 pb-3 pt-3 flex flex-col items-center justify-center text-center sm:flex-row">
+          <span className="text-white sm:mr-10 sm:text-sm">Copyright &copy; 2024, Todos os direitos reservados - <button onClick={handleNavigate}>Imex Solutions</button></span>
+          <span className="text-black">-Desenvolvido por Atlas WW-</span>
         </footer>
+
+
 
       </div>
       )
