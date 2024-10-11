@@ -12,6 +12,7 @@ import {
   doc,
   getDoc
 } from "firebase/firestore"
+import { useNavigate } from "react-router-dom"
 
 
 interface LinkProps{
@@ -33,6 +34,7 @@ export function Home(){
 
   const [links, setLinks] = useState<LinkProps[]>([])
   const [socialLinks, setSocialLinks] = useState<SocialLinksProps>()
+  const navigate = useNavigate()
 
   useEffect( () => {
     function loadLinks(){
@@ -76,6 +78,9 @@ export function Home(){
     loadSocialLinks()
   },[])
 
+  function handleNavigate(){
+    navigate("/login")
+  }
 
     return (
       <div className="flex flex-col w-full py-4 items-center justify-center">
@@ -113,7 +118,7 @@ export function Home(){
           )}
         </main>
         <footer style={{backgroundColor: "#17806C"}} className="w-full fixed bottom-0 pb-3 pt-3 flex items-center justify-center">
-          <span className="text-white mr-10">Copyright &copy; 2024, Todos os direitos reservados - Imex Solutions</span>
+          <span className="text-white mr-10">Copyright &copy; 2024, Todos os direitos reservados - <button onClick={handleNavigate}>Imex Solutions</button></span>
           <span className="">-Desenvolvido por Atlas WW-</span>
         </footer>
 
