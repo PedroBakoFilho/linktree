@@ -88,7 +88,7 @@ export function Home(){
 
         <img 
           style={{position: "absolute", right: 0, top: 0, opacity: 0.3, zIndex: -1}} 
-          className="h-screen w-12/12 lg:w-6/12 object-cover" 
+          className="h-screen w-6/12 lg:w-6/12 lg:object-cover" 
           src={logoImex} 
           alt="Logo Imex" 
         />
