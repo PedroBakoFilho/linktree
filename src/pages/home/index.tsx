@@ -3,6 +3,7 @@ import { Social } from "../../components/social"
 import { FaInstagram, FaLinkedin } from "react-icons/fa"
 import logoImex from '../../assets/brancox.png'
 
+
 import { db } from "../../services/firebaseConnection"
 import {
   getDocs,
@@ -85,7 +86,12 @@ export function Home(){
     return (
       <div className="flex flex-col w-full py-4 items-center justify-center">
 
-        <img style={{position: "absolute", right: 0, top: 0, opacity: 0.3, zIndex: -1}} className="h-screen" src={logoImex} alt="Logo Imex" />
+        <img 
+          style={{position: "absolute", right: 0, top: 0, opacity: 0.3, zIndex: -1}} 
+          className="h-screen w-6/12 object-cover" 
+          src={logoImex} 
+          alt="Logo Imex" 
+        />
 
         <h1 className="md:text-4xl text-3xl font-bold text-white mt-20 ">Imex <span className="bg-gradient-to-r from-custom-green-imex to-green-700 bg-clip-text text-transparent">Solutions</span></h1>
         <span className="text-gray-50 mb-5 mt-3">Acesse nossos links</span>
@@ -117,13 +123,10 @@ export function Home(){
             </div>
           )}
         </main>
-        <footer style={{backgroundColor: "#17806C"}} className="w-full fixed bottom-0 pb-3 pt-3 flex flex-col items-center justify-center text-center sm:flex-row">
-          <span className="text-white sm:mr-10 sm:text-sm">Copyright &copy; 2024, Todos os direitos reservados - <button onClick={handleNavigate}>Imex Solutions</button></span>
-          <span className="text-black">-Desenvolvido por Atlas WW-</span>
+        <footer style={{backgroundColor: "#17806C"}} className="w-full fixed bottom-0 pb-1 pt-1 sm:pb-3 sm:pt-3 flex flex-col items-center justify-center text-center sm:flex-row">
+          <span className="text-white text-sm sm:text-base sm:mr-10">Copyright &copy; 2024, Todos os direitos reservados - <button onClick={handleNavigate}>Imex Solutions</button></span>
+          <span className="text-white text-sm sm:text-base">-Desenvolvido por Atlas WW-</span>
         </footer>
-
-
-
       </div>
       )
 }
