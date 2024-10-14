@@ -86,12 +86,12 @@ export function Home(){
     return (
       <div className="flex flex-col w-full py-4 items-center justify-center">
 
-        <img 
-          style={{position: "absolute", right: 0, top: 0, opacity: 0.1, zIndex: -1}} 
-          className="h-screen w-10/12  md:opacity-30 md:w-6/12 lg:object-cover" 
-          src={logoImex} 
-          alt="Logo Imex" 
-        />
+    <img 
+      className="absolute right-0 bottom-0 opacity-10 w-6/12 h-8/12 z-[-1] md: md:top-0" 
+      src={logoImex} 
+      alt="Logo Imex" 
+    />
+
 
         <h1 className="md:text-4xl text-3xl font-bold text-white mt-20 ">Imex <span className="bg-gradient-to-r from-custom-green-imex to-green-700 bg-clip-text text-transparent">Solutions</span></h1>
         <span className="text-gray-50 mb-5 mt-3">Acesse nossos links</span>
