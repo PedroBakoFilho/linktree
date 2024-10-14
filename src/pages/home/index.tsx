@@ -87,8 +87,8 @@ export function Home(){
       <div className="flex flex-col w-full py-4 items-center justify-center">
 
         <img 
-          style={{position: "absolute", right: 0, top: 0, opacity: 0.3, zIndex: -1}} 
-          className="h-screen w-6/12 lg:w-6/12 lg:object-cover" 
+          style={{position: "absolute", right: 0, top: 0, opacity: 0.1, zIndex: -1}} 
+          className="h-screen w-10/12  md:opacity-30 md:w-6/12 lg:object-cover" 
           src={logoImex} 
           alt="Logo Imex" 
         />
