@@ -2,8 +2,6 @@ import { useEffect, useState } from "react"
 import { Social } from "../../components/social"
 import { FaInstagram, FaLinkedin } from "react-icons/fa"
 import logoImex from '../../assets/brancox.png'
-import styles from './styles.module.css'
-
 
 import { db } from "../../services/firebaseConnection"
 import {
