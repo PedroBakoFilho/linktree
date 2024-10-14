@@ -86,7 +86,7 @@ export function Home(){
     <div className="flex flex-col w-full py-4 items-center justify-center">
 
     <img
-      className="absolute right-0 bottom-0 md:right-0 md:top-0 md:absolute md:w-6/12 md:h-screen opacity-10 w-1/2 h-1/2"
+      className="absolute right-0 mb-14 bottom-0 md:right-0 md:top-0 md:absolute md:w-6/12 md:h-screen opacity-10 w-1/2 h-1/2"
       src={logoImex}
       alt="Logo Imex"
     />
