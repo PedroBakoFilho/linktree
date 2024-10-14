@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { Social } from "../../components/social"
 import { FaInstagram, FaLinkedin } from "react-icons/fa"
 import logoImex from '../../assets/brancox.png'
+import styles from './styles.module.css'
 
 
 import { db } from "../../services/firebaseConnection"
@@ -84,12 +85,12 @@ export function Home(){
   }
 
     return (
-      <div className="flex flex-col w-full py-4 items-center justify-center">
+    <div className="flex flex-col w-full py-4 items-center justify-center">
 
-    <img 
-      className="absolute right-0 bottom-0 opacity-10 w-6/12 h-8/12 z-[-1] md: md:top-0" 
-      src={logoImex} 
-      alt="Logo Imex" 
+    <img
+      className="absolute right-0 bottom-0 md:right-0 md:top-0 md:absolute md:w-6/12 md:h-screen opacity-10 w-1/2 h-1/2"
+      src={logoImex}
+      alt="Logo Imex"
     />
 
 
